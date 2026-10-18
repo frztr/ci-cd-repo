@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "sVfjbRp0pNI=",
+  "success": true,
+  "projectFilePath": "/home/forezzzter/Documents/Магистратура/ЛР Технологии коллективной разработки информационных систем/Лабораторная работа 2/WebApp/WebApp.csproj",
+  "expectedPackageFiles": [
+    "/home/forezzzter/.nuget/packages/microsoft.aspnetcore.openapi/9.0.13/microsoft.aspnetcore.openapi.9.0.13.nupkg.sha512",
+    "/home/forezzzter/.nuget/packages/microsoft.openapi/1.6.17/microsoft.openapi.1.6.17.nupkg.sha512",
+    "/home/forezzzter/.nuget/packages/microsoft.netcore.app.ref/9.0.14/microsoft.netcore.app.ref.9.0.14.nupkg.sha512",
+    "/home/forezzzter/.nuget/packages/microsoft.aspnetcore.app.ref/9.0.14/microsoft.aspnetcore.app.ref.9.0.14.nupkg.sha512",
+    "/home/forezzzter/.nuget/packages/microsoft.netcore.app.host.linux-x64/9.0.14/microsoft.netcore.app.host.linux-x64.9.0.14.nupkg.sha512"
+  ],
+  "logs": []
+}
