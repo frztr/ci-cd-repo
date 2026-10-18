@@ -3,8 +3,16 @@ using WebApp.Services;
 
 namespace WebAppTests;
 
+/// <summary>
+/// Класс тестирования для сервиса приветствий <see cref="GreetingService"/>
+/// </summary>
 public class GreetingTests
 {
+    /// <summary>
+    /// Метод проверяющий соответствие приветствий с временем суток.
+    /// </summary>
+    /// <param name="hour">час</param>
+    /// <param name="expected">ожидаемое приветствие</param>
     [Theory]
     [InlineData(0, "Good night")]
     [InlineData(4, "Good night")]
@@ -25,6 +33,9 @@ public class GreetingTests
         Assert.Equal(expected, service.GetGreeting());
     }
     
+    /// <summary>
+    /// Проверяет соответствие приветствия пользователя ожидаемому значению
+    /// </summary>
     [Fact]
     public void GetGreetingForNameAppendsNameToGreeting()
     {

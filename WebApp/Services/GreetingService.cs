@@ -1,7 +1,9 @@
 namespace WebApp.Services;
 
+/// <inheritdoc />
 public sealed class GreetingService(TimeProvider timeProvider) : IGreetingService
 {
+    /// <inheritdoc />
     public string GetGreeting()
     {
         var hour = timeProvider.GetLocalNow().Hour;
@@ -14,6 +16,7 @@ public sealed class GreetingService(TimeProvider timeProvider) : IGreetingServic
         };
     }
 
+    /// <inheritdoc />
     public string GetGreetingForName(string name)
     {
         return $"{GetGreeting()}, {name}";
