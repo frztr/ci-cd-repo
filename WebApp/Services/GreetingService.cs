@@ -13,4 +13,9 @@ public sealed class GreetingService(TimeProvider timeProvider) : IGreetingServic
             _ => "Good night",
         };
     }
+
+    public string GetGreetingForName(string name)
+    {
+        return $"{GetGreeting()}, {name}";
+    }
 }

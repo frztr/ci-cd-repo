@@ -24,4 +24,14 @@ public class GreetingTests
         var service = new GreetingService(time);
         Assert.Equal(expected, service.GetGreeting());
     }
+    
+    [Fact]
+    public void GetGreetingForNameAppendsNameToGreeting()
+    {
+        var time = new FakeTimeProvider();
+        time.SetLocalTimeZone(TimeZoneInfo.Utc);
+        time.SetUtcNow(new DateTimeOffset(2026, 10, 18, 8, 0, 0, TimeSpan.Zero));
+        var service = new GreetingService(time);
+        Assert.Equal("Good morning, Ann", service.GetGreetingForName("Ann"));
+    }
 }
