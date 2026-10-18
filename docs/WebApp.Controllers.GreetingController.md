@@ -3,7 +3,7 @@
 
 ## GreetingController Class
 
-Контроллер приветствия пользователя
+Контроллер возвращающий приветствия пользователя, зависящие от времени суток\.
 
 ```csharp
 public sealed class GreetingController : Microsoft.AspNetCore.Mvc.ControllerBase
@@ -13,7 +13,7 @@ Inheritance [System\.Object](https://learn.microsoft.com/en-us/dotnet/api/system
 
 | Constructors | |
 | :--- | :--- |
-| [GreetingController\(IGreetingService\)](WebApp.Controllers.GreetingController.GreetingController(WebApp.Services.IGreetingService).md 'WebApp\.Controllers\.GreetingController\.GreetingController\(WebApp\.Services\.IGreetingService\)') | Контроллер приветствия пользователя |
+| [GreetingController\(IGreetingService\)](WebApp.Controllers.GreetingController.GreetingController(WebApp.Services.IGreetingService).md 'WebApp\.Controllers\.GreetingController\.GreetingController\(WebApp\.Services\.IGreetingService\)') | Контроллер возвращающий приветствия пользователя, зависящие от времени суток\. |
 
 | Methods | |
 | :--- | :--- |

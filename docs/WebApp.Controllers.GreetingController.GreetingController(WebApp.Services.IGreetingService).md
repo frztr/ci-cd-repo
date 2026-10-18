@@ -3,7 +3,7 @@
 
 ## GreetingController\(IGreetingService\) Constructor
 
-Контроллер приветствия пользователя
+Контроллер возвращающий приветствия пользователя, зависящие от времени суток\.
 
 ```csharp
 public GreetingController(WebApp.Services.IGreetingService greetingService);

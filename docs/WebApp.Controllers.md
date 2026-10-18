@@ -4,4 +4,4 @@
 
 | Classes | |
 | :--- | :--- |
-| [GreetingController](WebApp.Controllers.GreetingController.md 'WebApp\.Controllers\.GreetingController') | Контроллер приветствия пользователя |
+| [GreetingController](WebApp.Controllers.GreetingController.md 'WebApp\.Controllers\.GreetingController') | Контроллер возвращающий приветствия пользователя, зависящие от времени суток\. |
