@@ -4,7 +4,7 @@ using WebApp.Services;
 namespace WebApp.Controllers;
 
 /// <summary>
-/// Контроллер приветствия пользователя
+/// Контроллер возвращающий приветствия пользователя, зависящие от времени суток.
 /// </summary>
 /// <param name="greetingService"><see cref="GreetingService"/></param>
 [ApiController]
