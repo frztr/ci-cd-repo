@@ -1,3 +1,4 @@
 <Solution>
+  <Project Path="WebAppTests\WebAppTests.csproj" Type="Classic C#" />
   <Project Path="WebApp\WebApp.csproj" Type="Classic C#" />
 </Solution>

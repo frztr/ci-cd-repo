@@ -14,5 +14,26 @@ jobs:
         with:
           dotnet-version: 9.0.x
 
-      - run: dotnet restore WebApp/WebApp.csproj
-      - run: dotnet build WebApp/WebApp.csproj --configuration Release --no-restore
+      - run: dotnet restore GreetingApi.slnx
+      - run: dotnet build GreetingApi.slnx  --configuration Release --no-restore
+      - uses: actions/upload-artifact@v4
+        with:
+          name: build
+          path: |
+            WebApp/bin/Release
+            WebApp/obj
+            WebAppTests/bin/Release
+            WebAppTests/obj
+
+  test:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 9.0.x
+      - uses: actions/download-artifact@v4
+        with:
+          name: build
+      - run: dotnet test GreetingApi.slnx --configuration Release --no-build
